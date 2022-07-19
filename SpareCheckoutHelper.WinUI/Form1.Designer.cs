@@ -32,14 +32,11 @@
             this.txtLocalFolder = new System.Windows.Forms.TextBox();
             this.txtGitUrl = new System.Windows.Forms.TextBox();
             this.txtGitFolder = new System.Windows.Forms.TextBox();
-            this.txtLog = new System.Windows.Forms.TextBox();
             this.btnExec = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblCommand = new System.Windows.Forms.Label();
             this.selectFolder = new System.Windows.Forms.FolderBrowserDialog();
-            this.jobProgress = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnSelectFolder
@@ -47,7 +44,7 @@
             this.btnSelectFolder.Location = new System.Drawing.Point(309, 34);
             this.btnSelectFolder.Name = "btnSelectFolder";
             this.btnSelectFolder.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectFolder.TabIndex = 0;
+            this.btnSelectFolder.TabIndex = 1;
             this.btnSelectFolder.Text = "Select";
             this.btnSelectFolder.UseVisualStyleBackColor = true;
             this.btnSelectFolder.Click += new System.EventHandler(this.btnSelectFolder_Click);
@@ -58,14 +55,14 @@
             this.txtLocalFolder.Name = "txtLocalFolder";
             this.txtLocalFolder.ReadOnly = true;
             this.txtLocalFolder.Size = new System.Drawing.Size(291, 23);
-            this.txtLocalFolder.TabIndex = 1;
+            this.txtLocalFolder.TabIndex = 0;
             // 
             // txtGitUrl
             // 
             this.txtGitUrl.Location = new System.Drawing.Point(12, 88);
             this.txtGitUrl.Name = "txtGitUrl";
             this.txtGitUrl.Size = new System.Drawing.Size(372, 23);
-            this.txtGitUrl.TabIndex = 1;
+            this.txtGitUrl.TabIndex = 2;
             // 
             // txtGitFolder
             // 
@@ -73,17 +70,6 @@
             this.txtGitFolder.Name = "txtGitFolder";
             this.txtGitFolder.Size = new System.Drawing.Size(372, 23);
             this.txtGitFolder.TabIndex = 1;
-            // 
-            // txtLog
-            // 
-            this.txtLog.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtLog.Location = new System.Drawing.Point(12, 256);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.ReadOnly = true;
-            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(372, 182);
-            this.txtLog.TabIndex = 2;
             // 
             // btnExec
             // 
@@ -122,39 +108,20 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Git folder to download";
             // 
-            // lblCommand
-            // 
-            this.lblCommand.AutoSize = true;
-            this.lblCommand.Location = new System.Drawing.Point(12, 238);
-            this.lblCommand.Name = "lblCommand";
-            this.lblCommand.Size = new System.Drawing.Size(111, 15);
-            this.lblCommand.TabIndex = 3;
-            this.lblCommand.Text = "Command Window";
-            // 
-            // jobProgress
-            // 
-            this.jobProgress.Location = new System.Drawing.Point(12, 202);
-            this.jobProgress.Name = "jobProgress";
-            this.jobProgress.Size = new System.Drawing.Size(372, 23);
-            this.jobProgress.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.jobProgress.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 450);
-            this.Controls.Add(this.jobProgress);
-            this.Controls.Add(this.lblCommand);
+            this.ClientSize = new System.Drawing.Size(399, 206);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.txtGitFolder);
             this.Controls.Add(this.txtGitUrl);
             this.Controls.Add(this.txtLocalFolder);
             this.Controls.Add(this.btnExec);
             this.Controls.Add(this.btnSelectFolder);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Spare Checkout Git";
             this.ResumeLayout(false);
@@ -168,13 +135,10 @@
         private TextBox txtLocalFolder;
         private TextBox txtGitUrl;
         private TextBox txtGitFolder;
-        private TextBox txtLog;
         private Button btnExec;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Label lblCommand;
         private FolderBrowserDialog selectFolder;
-        private ProgressBar jobProgress;
     }
 }

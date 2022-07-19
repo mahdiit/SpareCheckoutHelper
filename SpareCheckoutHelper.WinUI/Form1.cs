@@ -20,15 +20,13 @@ namespace SpareCheckoutHelper.WinUI
         }
 
         private void btnExec_Click(object sender, EventArgs e)
-        {            
-            jobProgress.MarqueeAnimationSpeed = 30;
+        { 
             Application.DoEvents();
             btnExec.Enabled = false;
             btnSelectFolder.Enabled = false;
             txtGitUrl.Enabled = false;
             txtGitFolder.Enabled = false;
 
-            txtLog.Text = "";
 
             var cmd = new StringBuilder();
             cmd.AppendLine("@echo off");
@@ -53,7 +51,9 @@ namespace SpareCheckoutHelper.WinUI
             if (p == null)
                 return;
 
-            jobProgress.MarqueeAnimationSpeed = 0;
+            Application.DoEvents();
+            p.WaitForExit();
+            
             btnExec.Enabled = true;
             btnSelectFolder.Enabled = true;
             txtGitUrl.Enabled = true;
