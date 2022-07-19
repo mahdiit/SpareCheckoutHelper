@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpareCheckoutHelper", "SpareCheckoutHelper\SpareCheckoutHelper.csproj", "{91D70912-5A81-47BC-8176-596E1373B82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpareCheckoutHelper.WinUI", "SpareCheckoutHelper.WinUI\SpareCheckoutHelper.WinUI.csproj", "{689DF964-31B7-4134-A3B4-674F3A426E9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91D70912-5A81-47BC-8176-596E1373B82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D70912-5A81-47BC-8176-596E1373B82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D70912-5A81-47BC-8176-596E1373B82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D70912-5A81-47BC-8176-596E1373B82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689DF964-31B7-4134-A3B4-674F3A426E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689DF964-31B7-4134-A3B4-674F3A426E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689DF964-31B7-4134-A3B4-674F3A426E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689DF964-31B7-4134-A3B4-674F3A426E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29BC3B06-D071-4AFF-8813-EFB310A46768}
+	EndGlobalSection
+EndGlobal
